@@ -1,0 +1,225 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+p, a{
+    font-family: rig-sans;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #101213;
+}
+h1,h2,h3{
+    font-family: scandia-web;
+    font-size: 28px;
+    font-weight: 600;
+    color: #101213;
+}
+
+.hero-bg{
+    background-image: url(img/Siófok\,\ Léda\ utca\ \(2\).jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-position: bottom;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 24px 0;
+}
+.nav-container{
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-center{
+    display: flex;
+    column-gap: 40px;
+}
+.nav-container a{
+    color: #c4c4c4;
+}
+.nav-center a:hover{
+    border: solid 1px #c4c4c4;
+    padding: 4px 12px;
+    margin: -5px -13px;
+}
+.nav-container a:hover .nav-right{
+    column-gap: 14px;
+}
+.nav-right a{
+    background-color: #c4c4c4;
+    color: #101213;
+    padding: 4px 12px;
+}
+.nav-right a:hover{
+    border: solid 1px #c4c4c4;
+    background-color: transparent;
+    color: #c4c4c4;
+    margin: 0 -1px;
+}
+.hero{
+    padding: 300px 0;
+}
+
+.hero-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.hero-container h1{
+    font-size: 72px;
+    color:#e7e7e7;
+}
+.hero-container p{
+    color:#c4c4c4;
+    width: 800px;
+    margin: auto;
+
+}
+.hero-container a{
+    background-color: #8FC3CF;
+    color: #101213;
+    padding: 16px 32px;
+    transition: 0.2s;
+}
+.hero-container a:hover{
+    background-color: #a4d2dc;
+}
+.hero-button{
+    margin-top: 40px;
+}
+
+.welcome{
+    background-color: #28393f;
+}
+.welcome-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+}
+.welcome-left{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.welcome-left h1{
+    font-size: 48px;
+    color: #e7e7e7;
+}
+.welcome-left p{
+    font-size: 21px;
+    color: #c4c4c4;
+    line-height: 32px;
+}
+.welcome-right img{
+    width: 100%;
+}
+
+.service{
+    background: #2a2a2a;
+    padding: 120px 0;
+}
+.service-container{
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+}
+.service-container h1{
+    font-size: 65px;
+    color: #e7e7e7;
+}
+.service-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 8px;
+}
+.service-image img{
+    width: 100%;
+}
+.service-text h2{
+    color: #e7e7e7;
+}
+.service-text p{
+    color: #c4c4c4;
+}
+.service-text a{
+    color: #8FC3CF;
+    font-weight: 600;
+}
+
+
+.gallery{
+    background-color:#28393f;
+    padding: 120px 0;
+}
+.gallery-container{
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+}
+.gallery-container h1{
+    font-size: 65px;
+    color: #e7e7e7;
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 8px;
+}
+.gallery-hover{
+    overflow: hidden;
+    position: relative;
+}
+.gallery-image{
+    transition: 0.5s;
+}
+.gallery-hover img{
+    width: 100%;
+    height: 100%;
+}
+.gallery-hover:hover .gallery-image{
+    transform: scale(1.1);
+}
+.gallery-hover:hover .gallery-text h3{
+    visibility: visible;
+}
+.gallery-text{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.gallery-border{
+    border: solid 1px #c4c4c4;
+    padding: 16px 16px;
+}
+.gallery-text h3{
+    color: white;
+}
+.gallery-text p{
+    color: white;
+    width: 250px;
+}
+.gallery-hover:hover .gallery-text{
+    opacity: 1;
+}
