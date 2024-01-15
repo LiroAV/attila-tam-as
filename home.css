@@ -3,15 +3,20 @@
     margin: 0;
     padding: 0;
 }
-p, a{
+p{
     font-family: rig-sans;
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
     color: #101213;
 }
+a{
+    font-family: noka;
+    font-weight: 500;
+    text-decoration: none;
+}
 h1,h2,h3{
-    font-family: scandia-web;
+    font-family: noka;
     font-size: 28px;
     font-weight: 600;
     color: #101213;
@@ -20,13 +25,13 @@ h1,h2,h3{
 .hero-bg{
     background-image: url(img/Siófok\,\ Léda\ utca\ \(2\).jpg);
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: multiply;
-    background-position: bottom;
+    background-position: center;
 }
 
 nav{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 24px 0;
 }
 .nav-container{
@@ -53,15 +58,16 @@ nav{
     column-gap: 14px;
 }
 .nav-right a{
-    background-color: #c4c4c4;
-    color: #101213;
+    border: solid 1px #8FC3CF;
     padding: 4px 12px;
+    color: #8FC3CF;
+    font-weight: 500;
+    transition: 0.3s;
 }
 .nav-right a:hover{
     border: solid 1px #c4c4c4;
-    background-color: transparent;
-    color: #c4c4c4;
-    margin: 0 -1px;
+    background-color: #8FC3CF;
+    color:#252a2c;
 }
 .hero{
     padding: 300px 0;
@@ -74,30 +80,33 @@ nav{
     row-gap: 16px;
 }
 .hero-container h1{
-    font-size: 72px;
+    font-size: 80px;
     color:#e7e7e7;
 }
 .hero-container p{
     color:#c4c4c4;
-    width: 800px;
+    width: 760px;
     margin: auto;
-
 }
 .hero-container a{
+    font-family: rig-sans;
+    font-weight: 600;
     background-color: #8FC3CF;
     color: #101213;
     padding: 16px 32px;
     transition: 0.2s;
 }
 .hero-container a:hover{
-    background-color: #a4d2dc;
+    background-color: transparent;
+    border: solid 1px #8FC3CF;
+    color: #8FC3CF;
 }
 .hero-button{
     margin-top: 40px;
 }
 
 .welcome{
-    background-color: #28393f;
+    background-color: #263c44;
 }
 .welcome-container{
     display: grid;
@@ -111,10 +120,10 @@ nav{
     padding: 80px;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 30px;
 }
 .welcome-left h1{
-    font-size: 48px;
+    font-size: 64px;
     color: #e7e7e7;
 }
 .welcome-left p{
@@ -127,7 +136,7 @@ nav{
 }
 
 .service{
-    background: #2a2a2a;
+    background: #252a2c;
     padding: 120px 0;
 }
 .service-container{
@@ -136,31 +145,53 @@ nav{
     margin: auto;
 }
 .service-container h1{
-    font-size: 65px;
+    font-size: 64px;
     color: #e7e7e7;
+    padding-bottom: 30px;
 }
 .service-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 8px;
+}
+.service-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
 }
 .service-image img{
     width: 100%;
+}
+.service-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 0 8px;
 }
 .service-text h2{
     color: #e7e7e7;
 }
 .service-text p{
     color: #c4c4c4;
+    line-height: 28px;
 }
-.service-text a{
+.service-learn{
+    margin-top: 16px;
+}
+.service-learn a{
     color: #8FC3CF;
     font-weight: 600;
+    font-family: rig-sans;
+}
+.learn-hover{
+    transition: 0.15s;
+}
+.service-learn a:hover .learn-hover{
+    margin-left: 8px;
 }
 
-
 .gallery{
-    background-color:#28393f;
+    background-color: #263c44;
     padding: 120px 0;
 }
 .gallery-container{
@@ -169,14 +200,15 @@ nav{
     margin: auto;
 }
 .gallery-container h1{
-    font-size: 65px;
+    font-size: 64px;
     color: #e7e7e7;
+    padding-bottom: 30px;
 }
 .gallery-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 8px;
-    row-gap: 8px;
+    column-gap: 16px;
+    row-gap: 16px;
 }
 .gallery-hover{
     overflow: hidden;
@@ -184,6 +216,7 @@ nav{
 }
 .gallery-image{
     transition: 0.5s;
+    height: 100%;
 }
 .gallery-hover img{
     width: 100%;
@@ -191,9 +224,6 @@ nav{
 }
 .gallery-hover:hover .gallery-image{
     transform: scale(1.1);
-}
-.gallery-hover:hover .gallery-text h3{
-    visibility: visible;
 }
 .gallery-text{
     position: absolute;
@@ -222,4 +252,24 @@ nav{
 }
 .gallery-hover:hover .gallery-text{
     opacity: 1;
+}
+
+footer{
+    padding: 60px 0 120px 0;
+    background-color: #111111;
+}
+.footer-container{
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+}
+.footer-grid{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-card h3{
+    color: white;
+}
+.footer-card p{
+    color: white;
 }
