@@ -127,12 +127,13 @@ nav{
     color: #e7e7e7;
 }
 .welcome-left p{
-    font-size: 21px;
+    font-size: 24px;
     color: #c4c4c4;
     line-height: 32px;
 }
 .welcome-right img{
     width: 100%;
+    height: 100%;
 }
 
 .service{
@@ -253,6 +254,32 @@ nav{
 .gallery-hover:hover .gallery-text{
     opacity: 1;
 }
+
+
+.info{
+    background-color: #A9A19B;
+}
+.info-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    align-items: center;
+}
+.info-container h1{
+    font-size: 64px;
+    color: #1f1f1f;
+    padding-bottom: 30px;
+}
+.info-container p{
+    font-size: 24px;
+    color: #363636;
+    line-height: 32px;
+}
+.info-container img{
+    width: 100%;
+    height: 100%;
+}
+
 
 footer{
     padding: 60px 0 120px 0;
