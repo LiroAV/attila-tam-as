@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referenzia</title>
+    <link rel="stylesheet" href="referenzia.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xlo2mio.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xlo2mio.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xlo2mio.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-left">
+                    <a href="">Logo</a>
+                </div>
+                <div class="nav-center">
+                    <a href="index.html">Föoldat</a>
+                    <a href="">Szolgaötatasaink</a>
+                    <a href="referenzia.html">Referenzia</a>
+                    <a href="">Àrak</a>
+                    <a href="">Rólunk</a>
+                </div>
+                <div class="nav-right">
+                    <a href="">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+        <div class="gallery">
+            <div class="gallery-container">
+                <h1>Lásd a munkáimat</h1>
+                <div class="gallery-grid">
+                    <img src="img/Szeged, Deryne utca 28. (1).jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Siofok, Leda utca (2).jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Szeged, Raba utca 11. (1).jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Szeged, Zakany utca 4. (2).jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Szeged, Mora utca (1).jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Siofok, Szechenyi utca 5. (1).jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Szeged, Matyas ter (1).jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Morahalom, Mikszath utca 6. (2).jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Morahalom, uszoda eloteto (1).jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Szeged, Oskola utca.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Szeged, Barka utca (1).jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Szeged, Traktor utca 121 (1).jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Szeged, Juhasz Gyula u. ovoda.jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Szeged, Lengyel utca (3).jpg" onclick="FullView(this.src)" alt="">
+                    <img src="img/Szeged, Szentharomsag utca 48. (1).jpg" onclick="FullView(this.src)" alt="">
+                </div>
+                <div id="FullImageView">
+                    <img id = "FullImage">
+                    <span id = "CloseButton" onclick = "CloseFullView()">&times;</span>
+                    <span id = "Close" onclick = "CloseFullView()"></span>
+                </div>
+                <script type = "text/javascript">
+                    function FullView(ImgLink){
+                        document.getElementById("FullImage").src = ImgLink;
+                        document.getElementById("FullImageView").style.display = "block";
+                    }
+                    function CloseFullView(){
+                        document.getElementById("FullImageView").style.display = "none";
+                    }
+                </script>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

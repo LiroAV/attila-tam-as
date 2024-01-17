@@ -113,11 +113,9 @@ nav{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     width: 100%;
-    max-width: 2000px;
-    margin: auto;
 }
 .welcome-left{
-    padding: 80px;
+    padding: 64px;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
@@ -264,6 +262,9 @@ nav{
     grid-template-columns: 1fr 1fr;
     column-gap: 16px;
     align-items: center;
+}
+.info-right{
+    padding: 64px;
 }
 .info-container h1{
     font-size: 64px;

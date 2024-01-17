@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-family: rig-sans;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #101213;
+}
+a{
+    font-family: noka;
+    font-weight: 500;
+    text-decoration: none;
+}
+h1,h2,h3{
+    font-family: noka;
+    font-size: 28px;
+    font-weight: 600;
+    color: #101213;
+}
+nav{
+    background-color: #051427;
+    padding: 24px 0;
+}
+.nav-container{
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-center{
+    display: flex;
+    column-gap: 40px;
+}
+.nav-container a{
+    color: #c4c4c4;
+}
+.nav-center a:hover{
+    border: solid 1px #c4c4c4;
+    padding: 4px 12px;
+    margin: -5px -13px;
+}
+.nav-container a:hover .nav-right{
+    column-gap: 14px;
+}
+.nav-right a{
+    border: solid 1px #8FC3CF;
+    padding: 4px 12px;
+    color: #8FC3CF;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.nav-right a:hover{
+    border: solid 1px #c4c4c4;
+    background-color: #8FC3CF;
+    color:#252a2c;
+}
+
+
+.gallery{
+    background-color: #252A2C;
+    padding: 120px 0;
+}
+.gallery-container{
+    width: 90%;
+    max-width: 1800px;
+    margin: auto;
+}
+.gallery-container h1{
+    font-size: 64px;
+    color: #e7e7e7;
+    padding-bottom: 30px;
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+}
+.gallery-grid img{
+    width: 100%;
+}
+.gallery-grid img:hover{
+    cursor: pointer;
+    filter: brightness(70%);
+}
+#FullImageView{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+#FullImage{
+    padding: 24px;
+    max-width: 98%;
+    max-height: 98%;
+}
+#CloseButton{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 48px;
+    color: white;
+    cursor: pointer;
+}
+#Close{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 48px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
