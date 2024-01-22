@@ -39,11 +39,13 @@ nav{
     max-width: 1400px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 .nav-center{
     display: flex;
+    flex-wrap: wrap;
     column-gap: 40px;
 }
 .nav-container a{
@@ -85,7 +87,7 @@ nav{
 }
 .hero-container p{
     color:#c4c4c4;
-    width: 760px;
+    max-width: 1000px;
     margin: auto;
 }
 .hero-container a{
@@ -110,7 +112,7 @@ nav{
 }
 .welcome-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     align-items: center;
     width: 100%;
 }
@@ -136,6 +138,7 @@ nav{
 .welcome-right img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .service{
@@ -154,7 +157,7 @@ nav{
 }
 .service-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     column-gap: 8px;
 }
 .service-card{
@@ -209,7 +212,7 @@ nav{
 }
 .gallery-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     column-gap: 16px;
     row-gap: 16px;
 }
@@ -251,7 +254,7 @@ nav{
 }
 .gallery-text p{
     color: white;
-    width: 250px;
+    width: 90%;
 }
 .gallery-hover:hover .gallery-text{
     opacity: 1;
@@ -263,7 +266,7 @@ nav{
 }
 .info-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     column-gap: 16px;
     align-items: center;
 }
@@ -274,6 +277,7 @@ nav{
 .info-left img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .info-right{
     padding: 64px;
@@ -301,6 +305,7 @@ footer{
 }
 .footer-grid{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .footer-card{
