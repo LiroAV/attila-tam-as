@@ -32,7 +32,7 @@ h1,h2,h3{
 
 nav{
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 24px 0;
+    padding: 12px 0;
 }
 .nav-container{
     width: 85%;
@@ -50,6 +50,9 @@ nav{
 }
 .nav-container a{
     color: #c4c4c4;
+}
+.nav-left img{
+    height: 70px;
 }
 .nav-center a:hover{
     border: solid 1px #c4c4c4;
@@ -248,13 +251,14 @@ nav{
 .gallery-border{
     border: solid 1px #c4c4c4;
     padding: 16px 16px;
+    width: 40%;
 }
 .gallery-text h3{
     color: white;
 }
 .gallery-text p{
+    margin-top:8px;
     color: white;
-    width: 90%;
 }
 .gallery-hover:hover .gallery-text{
     opacity: 1;
